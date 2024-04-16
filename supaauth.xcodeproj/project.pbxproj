@@ -11,6 +11,16 @@
 		74B5EF842BCE858E00C29604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5EF832BCE858E00C29604 /* ContentView.swift */; };
 		74B5EF862BCE858F00C29604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B5EF852BCE858F00C29604 /* Assets.xcassets */; };
 		74B5EF8A2BCE858F00C29604 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B5EF892BCE858F00C29604 /* Preview Assets.xcassets */; };
+		74B5EF922BCE864D00C29604 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5EF912BCE864D00C29604 /* KeychainHelper.swift */; };
+		74B5EF942BCE867800C29604 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5EF932BCE867800C29604 /* AuthManager.swift */; };
+		74B5EF972BCE87F900C29604 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EF962BCE87F900C29604 /* Auth */; };
+		74B5EF992BCE87F900C29604 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EF982BCE87F900C29604 /* Functions */; };
+		74B5EF9B2BCE87F900C29604 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EF9A2BCE87F900C29604 /* PostgREST */; };
+		74B5EF9D2BCE87F900C29604 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EF9C2BCE87F900C29604 /* Realtime */; };
+		74B5EF9F2BCE87F900C29604 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EF9E2BCE87F900C29604 /* Storage */; };
+		74B5EFA12BCE88D800C29604 /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5EFA02BCE88D800C29604 /* SignInApple.swift */; };
+		74B5EFA42BCE8B1300C29604 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EFA32BCE8B1300C29604 /* Supabase */; };
+		74B5EFA82BCED18C00C29604 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 74B5EFA72BCED18C00C29604 /* IdentifiedCollections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,9 @@
 		74B5EF852BCE858F00C29604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B5EF872BCE858F00C29604 /* supaauth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = supaauth.entitlements; sourceTree = "<group>"; };
 		74B5EF892BCE858F00C29604 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74B5EF912BCE864D00C29604 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		74B5EF932BCE867800C29604 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		74B5EFA02BCE88D800C29604 /* SignInApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B5EF9B2BCE87F900C29604 /* PostgREST in Frameworks */,
+				74B5EF992BCE87F900C29604 /* Functions in Frameworks */,
+				74B5EFA42BCE8B1300C29604 /* Supabase in Frameworks */,
+				74B5EF972BCE87F900C29604 /* Auth in Frameworks */,
+				74B5EFA82BCED18C00C29604 /* IdentifiedCollections in Frameworks */,
+				74B5EF9F2BCE87F900C29604 /* Storage in Frameworks */,
+				74B5EF9D2BCE87F900C29604 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +56,10 @@
 		74B5EF752BCE858E00C29604 = {
 			isa = PBXGroup;
 			children = (
+				74B5EFA52BCEC6F400C29604 /* supabase */,
 				74B5EF802BCE858E00C29604 /* supaauth */,
 				74B5EF7F2BCE858E00C29604 /* Products */,
+				74B5EFA22BCE8B1300C29604 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,7 @@
 		74B5EF802BCE858E00C29604 /* supaauth */ = {
 			isa = PBXGroup;
 			children = (
+				74B5EF902BCE863600C29604 /* Auth */,
 				74B5EF812BCE858E00C29604 /* supaauthApp.swift */,
 				74B5EF832BCE858E00C29604 /* ContentView.swift */,
 				74B5EF852BCE858F00C29604 /* Assets.xcassets */,
@@ -67,6 +90,30 @@
 				74B5EF892BCE858F00C29604 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74B5EF902BCE863600C29604 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				74B5EF912BCE864D00C29604 /* KeychainHelper.swift */,
+				74B5EF932BCE867800C29604 /* AuthManager.swift */,
+				74B5EFA02BCE88D800C29604 /* SignInApple.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		74B5EFA22BCE8B1300C29604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74B5EFA52BCEC6F400C29604 /* supabase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = supabase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +132,15 @@
 			dependencies = (
 			);
 			name = supaauth;
+			packageProductDependencies = (
+				74B5EF962BCE87F900C29604 /* Auth */,
+				74B5EF982BCE87F900C29604 /* Functions */,
+				74B5EF9A2BCE87F900C29604 /* PostgREST */,
+				74B5EF9C2BCE87F900C29604 /* Realtime */,
+				74B5EF9E2BCE87F900C29604 /* Storage */,
+				74B5EFA32BCE8B1300C29604 /* Supabase */,
+				74B5EFA72BCED18C00C29604 /* IdentifiedCollections */,
+			);
 			productName = supaauth;
 			productReference = 74B5EF7E2BCE858E00C29604 /* supaauth.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +169,10 @@
 				Base,
 			);
 			mainGroup = 74B5EF752BCE858E00C29604;
+			packageReferences = (
+				74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				74B5EFA62BCED18C00C29604 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
+			);
 			productRefGroup = 74B5EF7F2BCE858E00C29604 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B5EFA12BCE88D800C29604 /* SignInApple.swift in Sources */,
 				74B5EF842BCE858E00C29604 /* ContentView.swift in Sources */,
+				74B5EF942BCE867800C29604 /* AuthManager.swift in Sources */,
+				74B5EF922BCE864D00C29604 /* KeychainHelper.swift in Sources */,
 				74B5EF822BCE858E00C29604 /* supaauthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +355,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.intest.supaauth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,7 +394,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.intest.supaauth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +424,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		74B5EFA62BCED18C00C29604 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74B5EF962BCE87F900C29604 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		74B5EF982BCE87F900C29604 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		74B5EF9A2BCE87F900C29604 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		74B5EF9C2BCE87F900C29604 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		74B5EF9E2BCE87F900C29604 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		74B5EFA32BCE8B1300C29604 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EF952BCE87F900C29604 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		74B5EFA72BCED18C00C29604 /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B5EFA62BCED18C00C29604 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74B5EF762BCE858E00C29604 /* Project object */;
 }
